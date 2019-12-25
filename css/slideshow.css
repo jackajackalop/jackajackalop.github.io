@@ -14,11 +14,21 @@ body {
 
 #slideshow-container {
     position: absolute;
+    top: 0px;
     width: 105%;
     height: 100%;
     left: -5%;
     overflow: hidden;
 }
+
+#slideshow-container:after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-blend-mode: multiply;
+}
+
 #slides {
   position: relative;
   width: 100%;

@@ -12,35 +12,25 @@
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="css/the-big-picture.css" rel="stylesheet">
-
+        <link href="css/slideshow.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/menu.css" />
     </head>
 
     <body>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container">
-                <a class="navbar-brand" href="#">Yixin He</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="art">Art
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="code">Code</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about">About</a>
-                        </li>
+        <div class="container">
+            <section class="section section--menu" id="Juno">
+                <span class="link-copy"></span>
+                <nav class="menu menu--juno">
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item--current"><a href="#" class="menu__link">Yixin He</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Art</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Code</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">About</a></li>
                     </ul>
-                </div>
-            </div>
-        </nav>
-
+                </nav>
+            </section>
+        </div>
         <!-- Page Content -->
         <div id="slideshow-container">
             <ul id="slides">
@@ -63,6 +53,40 @@
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript" src="js/slideshow.js"></script>
+        <script src="js/classie.js"></script>
+        <script>
+            (function() {
+                [].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
+                    var menuItems = menu.querySelectorAll('.menu__link'),
+                        setCurrent = function(ev) {
+                            ev.preventDefault();
+                            var item = ev.target.parentNode; // li
+                            // return if already current
+                            if (classie.has(item, 'menu__item--current')) {
+                                return false;
+                            }
+                            // remove current
+                            classie.remove(menu.querySelector('.menu__item--current'), 'menu__item--current');
+                            // set current
+                            classie.add(item, 'menu__item--current');
+                        };
+                    [].slice.call(menuItems).forEach(function(el) {
+                        el.addEventListener('click', setCurrent);
+                    });
+                });
+                [].slice.call(document.querySelectorAll('.link-copy')).forEach(function(link) {
+                    link.setAttribute('data-clipboard-text', location.protocol + '//' + location.host + location.pathname + '#' + link.parentNode.id);
+                    new Clipboard(link);
+                    link.addEventListener('click', function() {
+                        classie.add(link, 'link-copy--animate');
+                        setTimeout(function() {
+                            classie.remove(link, 'link-copy--animate');
+                        }, 300);
+                    });
+                });
+            })(window);
+        </script>
+
     </body>
 
 </html>
