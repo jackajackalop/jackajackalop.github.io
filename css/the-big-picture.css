@@ -3,40 +3,108 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-the-big-picture/blob/master/LICENSE)
  */
-/*
+* {box-sizing:border-box}
+
 body {
-  background: url('http://placehold.it/1920x1080') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
-*/
-* {box-sizing:border-box}
 
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+#slideshow-container {
+    position: absolute;
+    width: 105%;
+    height: 100%;
+    left: -5%;
+    overflow: hidden;
+}
+#slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#slides .slide {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+#slides .slide .slide-partial {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+#slides .slide .slide-partial img {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+#slides .slide .slide-left {
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+#slides .slide .slide-left img {
+  top: 0;
+  right: 0;
+  -o-object-position: 100% 50%;
+     object-position: 100% 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+#slides .slide.active .slide-partial, #slides .slide.active .slide-partial img {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
-.slide {
-    display: none;
+#slide-select {
+  list-style-type: none;
+  position: absolute;
+  bottom: 20px;
+  left: 5%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#slide-select li {
+  position: relative;
+  cursor: pointer;
+  margin: 0 5px;
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+
+}
+#slide-select li.prev:hover {
+  -webkit-transform: translateX(-2px);
+          transform: translateX(-2px);
+}
+#slide-select li.next:hover {
+  -webkit-transform: translateX(2px);
+          transform: translateX(2px);
+}
+#slide-select .selector {
+  height: 14px;
+  width: 14px;
+  border: 2px solid white;
+  background-color: transparent;
+  transition: background-color 0.5s ease-in-out;
+}
+#slide-select .selector.current {
+  background-color: white;
 }
 
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}

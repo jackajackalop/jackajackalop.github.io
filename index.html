@@ -1,78 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-<head>
+        <title>Yixin He</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <title>Yixin He</title>
+        <!-- Custom styles for this template -->
+        <link href="css/the-big-picture.css" rel="stylesheet">
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    </head>
 
-  <!-- Custom styles for this template -->
-  <link href="css/the-big-picture.css" rel="stylesheet">
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Yixin He</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="art">Art
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="code">Code</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-</head>
+        <!-- Page Content -->
+        <div id="slideshow-container">
+            <ul id="slides">
+                <li class="slide">
+                    <div class="slide-partial slide-left"><img src="img/home/img1.png"></div>
+                </li>
+                <li class="slide">
+                    <div class="slide-partial slide-left"><img src="img/home/img2.png"></div>
+                </li>
+            </ul>
+            <ul id="slide-select">
+                <li class="btn prev"><</li>
+                <li class="selector"></li>
+                <li class="selector"></li>
+                <li class="btn next">></li>
+            </ul>
+        </div>
 
-<body>
-
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Yixin He</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="art">Art
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="code">Code</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about">About</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Page Content -->
-  <div class="slideshow-container">
-      <div class="slide fade">
-          <img src="img/home/img1.png" style="width:100%">
-      </div>
-      <div class="slide fade">
-          <img src="img/home/img2.png" style="width:100%">
-      </div>
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <script>
-    var slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        var i;
-        var slides = documents.getElementsByClassName("slide");
-        for (i = 0; i<slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slides[slideIndex].style.display = "block";
-        slideIndex = (slideIndex+1)%slides.length;
-        setTimeout(showSlides, 2000);
-    }
-  </script>
-</body>
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/slideshow.js"></script>
+    </body>
 
 </html>
