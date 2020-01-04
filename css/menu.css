@@ -36,8 +36,9 @@
 }
 
 .menu__link {
+    font-family: Andale Mono, AndaleMono, monospace;
 	font-size: 1.05em;
-	font-weight: bold;
+	font-weight: 200;
 	display: block;
 	padding: 1em;
 	cursor: pointer;
