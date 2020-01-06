@@ -10,6 +10,27 @@
     z-index:99;
 }
 
+button:focus {
+    box-shadow: none !important;
+    outline-style: solid !important;
+    outline-color: #72b185 !important;
+    outline-width: thin !important;
+}
+
+.row {
+    margin-top: 6%;
+    margin-right: 10%;
+}
+
+.btn-group {
+    z-index: 2;
+}
+
+.btn-group:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesnt close
+}
+
 .menu {
 	line-height: 1;
     position: absolute;
