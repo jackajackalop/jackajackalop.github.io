@@ -18,6 +18,7 @@
         <!-- Custom styles for this template -->
         <link rel="stylesheet" type="text/css" href="css/menu.css" />
         <link rel="stylesheet" type="text/css" href="css/gallery.css" />
+        <link rel="stylesheet" type="text/css" href="css/ekko-lightbox.css" />
     </head>
 
     <body>
@@ -43,7 +44,7 @@
             <!-- Grid column -->
             <div class="col-md-12 text-right mb-3">
 
-                <button type="button" autofocus class="btn btn-outline-black filter" data-rel="all">Illustrations</button>
+                <button type="button" autofocus class="btn btn-outline-black filter" data-rel="0">Illustrations</button>
                 <div class="btn-group">
                     <button type="button" class="btn btn-outline-black dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-rel="1">Projects
                         <span class="caret"></span>
@@ -57,49 +58,35 @@
                 </div>
                 <button type="button" class="btn btn-outline-black filter" data-rel="2">Sketches</button>
 
-            <!-- Grid column -->
+                <!-- Grid column -->
             </div>
-        <!-- Grid row -->
+            <!-- Grid row -->
         </div>
-
-        <div class="gallery" id="gallery">
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 2">
-                <img class="img-fluid" style="width:100%" src="img/art/ibara.png" alt="Card image cap">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="row">
+                    <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+                    </a>
+                    <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid">
+                    </a>
+                    <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid">
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid">
+                    </a>
+                    <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid">
+                    </a>
+                    <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                        <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid">
+                    </a>
+                </div>
             </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 1">
-                <img class="img-fluid" style="width:100%" src="img/art/stars.jpg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 1">
-                <img class="img-fluid" style="width:100%" src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 2">
-                <img class="img-fluid" style="width:100%" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 2">
-                <img class="img-fluid" style="width:100%" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="mb-3 pics animation all 1">
-                <img class="img-fluid" style="width:100%" src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg" alt="Card image cap">
-            </div>
-            <!-- Grid column -->
-
         </div>
         <!-- Grid row -->
         <!-- Bootstrap core JavaScript -->
@@ -109,7 +96,13 @@
         <script src="js/classie.js"></script>
         <script src="js/clipboard.min.js"></script>
         <script src="js/menu.js"></script>
-
+        <script src="js/ekko-lightbox.js"></script>
+        <script type="text/javascript">
+            $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+        </script>
     </body>
 
 </html>
