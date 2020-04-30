@@ -29,6 +29,28 @@
     height: auto;
 }
 
+.col.thumbnail:hover .img{
+  opacity: 0.4;
+  transition: .5s ease;
+}
+
+.col.thumbnail:hover .text{
+    visibility: visible;
+}
+
+.text {
+  visibility: hidden;
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 .row-g {
     margin-top: 2%;
     margin-bottom: 2%;
