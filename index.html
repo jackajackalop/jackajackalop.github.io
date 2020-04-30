@@ -6,7 +6,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-         <!-- Google Fonts -->
+        <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,700&display=swap"
               rel="stylesheet">
 
@@ -16,8 +16,9 @@
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom styles for this template -->
-        <link href="css/slideshow.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/menu.css" />
+        <link rel="stylesheet" type="text/css" href="css/gallery.css" />
+        <link rel="stylesheet" type="text/css" href="css/ekko-lightbox.css" />
     </head>
 
     <body>
@@ -25,51 +26,235 @@
         <div class="container">
             <section class="section section--menu" id="Juno">
                 <span class="link-copy"></span>
+                <div id="menu-bar"></div>
                 <nav class="menu menu--juno">
                     <ul class="menu__list">
-                        <li class="menu__item menu__item--current"><a href="#" class="menu__link">Yixin He</a></li>
-                        <li class="menu__item"><a href="art.html" class="menu__link">Art</a></li>
-                        <li class="menu__item"><a href="code.html" class="menu__link">Code</a></li>
-                        <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
+                        <li class="menu__item"><a href="/" class="menu__link" style="color:black">Yixin He</a></li>
+                        <li class="menu__item menu__item--current"><a href="#" class="menu__link" style="color:black">Art</a></li>
+                        <li class="menu__item"><a href="code.html" class="menu__link" style="color:black">Code</a></li>
+                        <li class="menu__item"><a href="about.html" class="menu__link" style="color:black">About</a></li>
                     </ul>
                 </nav>
             </section>
         </div>
         <!-- Page Content -->
-        <div id="slideshow-container">
-            <div id="dim"> </div>
-            <ul id="slides">
-                <li class="slide">
-                    <div class="slide-partial slide-left"><img src="img/home/1.JPG"></div>
-                </li>
-                <li class="slide">
-                    <div class="slide-partial slide-left"><img src="img/home/2.png"></div>
-                </li>
-                <li class="slide">
-                    <div class="slide-partial slide-left"><img src="img/home/3.jpg"></div>
-                </li>
-                <li class="slide">
-                    <div class="slide-partial slide-left"><img src="img/home/4.JPG"></div>
-                </li>
-            </ul>
-            <ul id="slide-select">
-                <li class="btn prev"><</li>
-                <li class="selector"></li>
-                <li class="selector"></li>
-                <li class="selector"></li>
-                <li class="selector"></li>
-                <li class="btn next">></li>
-            </ul>
-        </div>
+        <!-- Grid row -->
+        <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-12 text-right mb-3">
 
+                <!-- <button type="button" autofocus class="btn btn-outline-black filter" data-rel="all">All</button> -->
+                <button type="button" autofocus class="btn btn-outline-black filter" data-rel="0">Illustrations</button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-black dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-rel="1">Projects
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><button type="button" autofocus class="btn btn-outline-black filter" data-rel="1b">Mermay 2019</button></li>
+                        <li><button type="button" autofocus class="btn btn-outline-black filter" data-rel="1c">Inktober 2018</button></li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-outline-black filter" data-rel="2">Sketches</button>
+
+                <!-- Grid col thumbnailumn -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        <div class="gallery" id="gallery">
+            <div class="row row-g pics animation all 0">
+                <a href="img/art/illustration/self.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/illustration/self.JPG" class="portrait">
+                </a>
+                <a href="img/art/illustration/geese.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/illustration/geese.JPG" class="portrait">
+                </a>
+                <a href="img/art/illustration/ibara.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/illustration/ibara.jpg" class="img">
+                </a>
+            </div>
+            <div class="row row-g pics animation all 0">
+                <a href="img/art/illustration/gathering.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/illustration/tgathering.jpg" class="img">
+                </a>
+                <a href="img/art/illustration/mimi.png" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/illustration/tmimi.png" class="img">
+                </a>
+                <a href="img/art/illustration/kilgon_flowers.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/illustration/tkilgon_flowers.jpg" class="img">
+                </a>
+            </div>
+            <div class="row row-g pics animation all 2">
+                <a href="img/art/sketch/flowers1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/sketch/tflowers1.jpg" class="img">
+                </a>
+                <a href="img/art/sketch/flowers3.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/sketch/tflowers3.jpg" class="img">
+                </a>
+                <a href="img/art/sketch/hawaii.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbail">
+                    <img src="img/art/sketch/hawaii.jpg" class="img">
+                </a>
+                <a href="img/art/sketch/taylor.JPG" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/sketch/ttaylor.jpg" class="img">
+                </a>
+            </div>
+            <div class="row row-g pics animation all 2">
+                <a href="img/art/sketch/Debra-Shaw.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/sketch/tDebra-Shaw.jpg" class="img">
+                </a>
+                <a href="img/art/sketch/Vivienne-Rohner.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/sketch/tVivienne-Rohner.jpg" class="img">
+                </a>
+                <a href="img/art/sketch/eric.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/sketch/teric.jpg" class="img">
+                </a>
+                <a href="img/art/sketch/figure.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/sketch/tfigure.jpg" class="img">
+                </a>
+            </div>
+
+            <!-- MERMAY 2019 -->
+            <div class="row row-g pics animation all 1b">
+                <a href="img/art/project/mermay/melon.PNG" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/mermay/melon.PNG" class="img">
+                </a>
+                <a href="img/art/project/mermay/colorful.PNG" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/mermay/colorful.PNG" class="img">
+                </a>
+                <a href="img/art/project/mermay/wagon.PNG" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/mermay/wagon.PNG" class="img">
+                </a>
+                <a href="img/art/project/mermay/kelp.PNG" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/mermay/kelp.PNG" class="img">
+                </a>
+            </div>
+            <div class="row row-g pics animation all 1b">
+                <a href="img/art/project/mermay/tiger.PNG" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/mermay/tiger.PNG" class="img">
+                </a>
+                <a href="img/art/project/mermay/coral.PNG" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/mermay/coral.PNG" class="img">
+                </a>
+                <a href="img/art/project/mermay/knight.PNG" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/mermay/knight.PNG" class="img">
+                </a>
+                <a href="img/art/project/mermay/stars.PNG" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/mermay/stars.PNG" class="img">
+                </a>
+            </div>
+
+            <!-- INKTOBER 2018 -->
+            <div class="row row-g pics animation all 1c">
+                <a href="img/art/project/inktober/1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/1.jpg" class="img">
+                </a>
+                <a href="img/art/project/inktober/2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/2.jpg" class="img">
+                </a>
+                <a href="img/art/project/inktober/3.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/3.jpg" class="img">
+                </a>
+                <a href="img/art/project/inktober/4.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/4.jpg" class="img">
+                </a>
+            </div>
+            <div class="row row-g pics animation all 1c">
+                <a href="img/art/project/inktober/5.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/5.jpg" class="img">
+                </a>
+                <a href="img/art/project/inktober/6.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/6.jpg" class="img">
+                </a>
+                <a href="img/art/project/inktober/7.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/7.jpg" class="img">
+                </a>
+                <a href="img/art/project/inktober/8.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/8.jpg" class="img">
+                </a>
+            </div>
+            <div class="row row-g pics animation all 1c">
+                <a href="img/art/project/inktober/9.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/9.jpg" class="img">
+                </a>
+                <a href="img/art/project/inktober/10.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/10.jpg" class="img">
+                </a>
+                <a href="img/art/project/inktober/11.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/11.jpg" class="img">
+                </a>
+                <a href="img/art/project/inktober/12.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/12.jpg" class="img">
+                </a>
+            </div>
+            <div class="row row-g pics animation all 1c">
+                <a href="img/art/project/inktober/13.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/13.jpg" class="img">
+                </a>
+                <a href="img/art/project/inktober/14.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/14.jpg" class="img">
+                </a>
+                <a href="img/art/project/inktober/15.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/15.jpg" class="img">
+                </a>
+                <a href="img/art/project/inktober/16.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/16.jpg" class="img">
+                </a>
+            </div>
+            <div class="row row-g pics animation all 1c">
+                <a href="img/art/project/inktober/17.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/17.jpg" class="img">
+                </a>
+                <a href="img/art/project/inktober/18.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/18.jpg" class="img">
+                </a>
+                <a href="img/art/project/inktober/19.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/19.jpg" class="img">
+                </a>
+                <a href="img/art/project/inktober/20.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/20.jpg" class="img">
+                </a>
+            </div>
+            <div class="row row-g pics animation all 1c">
+                <a href="img/art/project/inktober/21.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/21.jpg" class="img">
+                </a>
+                <a href="img/art/project/inktober/22.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/22.jpg" class="img">
+                </a>
+                <a href="img/art/project/inktober/23.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/23.jpg" class="img">
+                </a>
+                <a href="img/art/project/inktober/24.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/24.jpg" class="img">
+                </a>
+            </div>
+            <div class="row row-g pics animation all 1c">
+                <a href="img/art/project/inktober/25.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/25.jpg" class="img">
+                </a>
+                <a href="img/art/project/inktober/26.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/26.jpg" class="img">
+                </a>
+                <a href="img/art/project/inktober/27.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col thumbnail">
+                    <img src="img/art/project/inktober/27.jpg" class="img">
+                </a>
+            </div>
+        </div>
+        </div>
+        <!-- Grid row -->
         <!-- Bootstrap core JavaScript -->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript" src="js/slideshow.js"></script>
+        <script type="text/javascript" src="js/gallery.js"></script>
         <script src="js/classie.js"></script>
         <script src="js/clipboard.min.js"></script>
         <script src="js/menu.js"></script>
-
+        <script src="js/ekko-lightbox.js"></script>
+        <script type="text/javascript">
+            $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+        </script>
     </body>
 
 </html>
