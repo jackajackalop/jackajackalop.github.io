@@ -15,7 +15,7 @@ a:hover {
 
 #menu-bar {
     position: absolute;
-    background-image: linear-gradient(to bottom, #b6d27c 0%, #dadc8b 100%);
+   /* background-image: linear-gradient(to bottom, #b6d27c 0%, #dadc8b 100%);*/
     opacity: 0.9;
     top: 0;
     left: 0;

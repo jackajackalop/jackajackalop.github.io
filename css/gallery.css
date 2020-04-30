@@ -5,6 +5,30 @@
     margin-bottom: 10%;
 }
 
+.thumbnail {
+    position: relative;
+    width: 370px;
+    height: 370px;
+    overflow: hidden;
+    margin: 0px 10px 0px 10px;
+}
+
+.thumbnail img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.thumbnail img.portrait {
+    width: 100%;
+    height: auto;
+}
+
 .row-g {
     margin-top: 2%;
     margin-bottom: 2%;
