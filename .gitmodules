@@ -1,0 +1,6 @@
+[submodule "DressDownGame"]
+	path = DressDownGame
+	url = https://github.com/jackajackalop/DressDownGame.git
+[submodule "Parrot"]
+	path = Parrot
+	url = https://github.com/jackajackalop/What-s-Wrong-With-You.git
