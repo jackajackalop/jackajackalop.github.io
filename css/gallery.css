@@ -40,11 +40,11 @@
 }
 
 
-.col.thumbnail:hover .text{
+.col.thumbnail:hover .txt{
     visibility: visible;
 }
 
-.text {
+.txt {
   visibility: hidden;
   color: black;
   font-size: 20px;

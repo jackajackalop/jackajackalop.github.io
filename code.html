@@ -18,6 +18,8 @@
         <!-- Custom styles for this template -->
         <link rel="stylesheet" type="text/css" href="css/menu.css" />
         <link rel="stylesheet" type="text/css" href="css/gallery.css" />
+        <link rel="stylesheet" type="text/css" href="css/code.css" />
+        <link rel="stylesheet" type="text/css" href="css/animate.css" />
     </head>
 
     <body>
@@ -36,47 +38,72 @@
                 </nav>
             </section>
         </div>
-        <!-- Page Content -->
 
-        <!-- Grid row -->
-        <div class="gallery" id="gallery">
-            <div class="row row-g pics animation all 0">
-                <a href="img/art/illustration/geese.JPG" class="col thumbnail">
-                    <img src="img/code/victo.png" class="img">
-                    <p class="text">Victo Ngai Inspired Stylization in Real-time</p>
-                </a>
-                <a href="img/art/illustration/geese.JPG" class="col thumbnail">
-                    <img src="img/code/watercolor.png" class="img">
-                    <p class="text">Art-directed Watercolor Stylization in Real-time</p>
-                </a>
-                <a href="img/art/illustration/kilgon.jpg" class="col thumbnail">
-                    <img src="img/code/mimicry.jpg" class="img">
-                    <p class="text">Modest Mimicry</p>
-                </a>
+        <!-- Page Content -->
+        <div class="gallery" style="top:20%">
+            <div class="blog-entry ftco-animate d-md-flex">
+                <a href="watercolor.html" class="img img-2" style="background-image: url(img/code/victo.png);"></a>
+                <div class="text text-2 pl-md-4">
+                    <h3 class="mb-2"><a href="single.html">Victo Ngai Inspired Styliation in Real-time</a></h3>
+                    <p class="mb-4">A fast approximation of the art of Victo Ngai for use in real-time 3D animation and games.</p>
+                    <p><a href="#" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+                </div>
             </div>
-            <div class="row row-g pics animation all 0">
-                <a href="DressDownGame/index.html" class="col thumbnail">
-                    <img src="img/code/dress.png" class="img">
-                    <p class="text">Dress Down Game</p>
-                </a>
-                <a href="img/art/illustration/kilgon.jpg" class="col thumbnail">
-                    <img src="img/code/bread.png" class="img">
-                    <p class="text">Bread Eating</p>
-                </a>
-                <a href="Parrot/index.html" class="col thumbnail">
-                    <img src="img/code/parrot.png" class="img">
-                    <p class="text">What's Wrong With You?</p>
-                </a>
+            <div class="blog-entry ftco-animate d-md-flex">
+                <a href="watercolor.html" class="img img-2" style="background-image: url(img/code/watercolor.png);"></a>
+                <div class="text text-2 pl-md-4">
+                    <h3 class="mb-2"><a href="single.html">Art-directed Watercolor Stylization in Real-time</a></h3>
+                    <p class="mb-4">A C++ implementation of Santiago E. Montesdeoca's 2017 paper.</p>
+                    <p><a href="watercolor.html" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+                </div>
+            </div>
+            <div class="blog-entry ftco-animate d-md-flex">
+                <a href="watercolor.html" class="img img-2" style="background-image: url(img/code/mimicry.jpg);"></a>
+                <div class="text text-2 pl-md-4">
+                    <h3 class="mb-2"><a href="single.html">Modest Mimicry</a></h3>
+                    <p class="mb-4">A 3D modeling/drawing game, featuring metaballs.</p>
+                    <p><a href="watercolor.html" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+                </div>
+            </div>
+            <div class="blog-entry ftco-animate d-md-flex">
+                <a href="watercolor.html" class="img img-2" style="background-image: url(img/code/dress.png);"></a>
+                <div class="text text-2 pl-md-4">
+                    <h3 class="mb-2"><a href="single.html">Dress Down Game</a></h3>
+                    <p class="mb-4">The opposite of a dress up game. (Warning: nudity)</p>
+                    <p><a href="watercolor.html" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+                </div>
+            </div>
+            <div class="blog-entry ftco-animate d-md-flex">
+                <a href="watercolor.html" class="img img-2" style="background-image: url(img/code/parrot.png);"></a>
+                <div class="text text-2 pl-md-4">
+                    <h3 class="mb-2"><a href="single.html">What's Wrong With You</a></h3>
+                    <p class="mb-4">An interactive self-care flowchart featuring a cursing parrot.</p>
+                    <p><a href="watercolor.html" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+                </div>
+            </div>
+            <div class="blog-entry ftco-animate d-md-flex">
+                <a href="watercolor.html" class="img img-2" style="background-image: url(img/code/bread.png);"></a>
+                <div class="text text-2 pl-md-4">
+                    <h3 class="mb-2"><a href="single.html">Bread Eating</a></h3>
+                    <p class="mb-4">Competitive chewing.</p>
+                    <p><a href="watercolor.html" class="btn-custom">Read More <span class="ion-ios-arrow-forward"></span></a></p>
+                </div>
             </div>
         </div>
-        <!-- Grid row -->
         <!-- Bootstrap core JavaScript -->
         <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript" src="js/gallery.js"></script>
+        <script src="js/jquery-migrate-3.0.1.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/jquery.animateNumber.min.js"></script>
+        <script src="js/scrollax.min.js"></script>
+        <script src="js/gallery.js"></script>
+        <script src="js/gallery.js"></script>
         <script src="js/classie.js"></script>
         <script src="js/clipboard.min.js"></script>
         <script src="js/menu.js"></script>
+        <script src="js/animate.js"></script>
 
     </body>
 
