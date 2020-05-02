@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
 
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,700&display=swap"
-              rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,700&display=swap" rel="stylesheet">
 
         <title>Yixin He</title>
 
@@ -18,9 +15,10 @@
         <!-- Custom styles for this template -->
         <link rel="stylesheet" type="text/css" href="css/menu.css" />
         <link rel="stylesheet" type="text/css" href="css/gallery.css" />
+        <link rel="stylesheet" type="text/css" href="css/parrot.css" />
         <script src="https://kit.fontawesome.com/1a64821e2f.js" crossorigin="anonymous"></script>
-    </head>
 
+    </head>
     <body>
         <!-- Navigation -->
         <div class="container">
@@ -31,28 +29,33 @@
                     <ul class="menu__list">
                         <li class="menu__item"><a href="/" class="menu__link" style="color:black">Yixin He</a></li>
                         <li class="menu__item"><a href="/" class="menu__link" style="color:black">Art</a></li>
-                        <li class="menu__item menu__item--current"><a href="code.html" class="menu__link" style="color:black">Code</a></li>
+                        <li class="menu__item menu__item--current"><a href="#" class="menu__link" style="color:black">Code</a></li>
                         <li class="menu__item"><a href="about.html" class="menu__link" style="color:black">About</a></li>
                     </ul>
                 </nav>
             </section>
         </div>
+
         <div class="row">
             <div class="col-md-12 text-right mb-3" style="right:5%">
                 <button type="button" class="btn btn-outline-black" onclick="window.location.href='code.html'">All</button>
-                <button type="button" autofocus class="btn btn-outline-black" onclick="window.location.href='#'">Watercolor</button>
+                <button type="button" class="btn btn-outline-black" onclick="window.location.href='watercolor.html'">Watercolor</button>
                 <button type="button" class="btn btn-outline-black" onclick="window.location.href='dress.html'">Dress</button>
-                <button type="button" class="btn btn-outline-black" onclick="window.location.href='parrot.html'">Parrot</button>
+                <button type="button" autofocus class="btn btn-outline-black" onclick="window.location.href='#'">Parrot</button>
             </div>
         </div>
 
+        <div class="d-flex justify-content-center">
+            <iframe scrolling="no" frameborder="0" src="parrot-embed.html"></iframe>
+        </div>
+        <div class="d-flex justify-content-center">
+            <p>(Speak to play)</p>
+        </div>
 
         <!-- Page Content -->
         <div class="gallery">
             <section class="ftco-section ftco-no-pt ftco-no-pb">
-                        <img src="img/code/watercolor_poster.jpg" alt="" class="img-fluid">
-                        <p>This was a semester long independent research project I completed under the guidance of <a href="http://www.cs.cmu.edu/~jmccann/">Jim McCann</a> in which on a quest to learn more about C++, OpenGL, and shader writing I implemented <a href="https://artineering.io/publications/Art-Directed-Watercolor-Stylization-of-3D-Animations-in-Real-Time/">this paper</a>. </p>
-                        <p>My work was presented at Carnegie Mellon's Spring 2019 Meeting of the Minds; this example scene and this poster were created for that symposium. My code can be found <a href="https://github.com/jackajackalop/watercolor-stylization">here</a>.</p>
+                <p>An interactive self-care flowchart featuring a cursing parrot. Inspired by <a href="http://youfeellikeshit.com/">this</a>, but personalized and made less gentle.</p>
             </section>
             <p style="margin-bottom:2%"></p>
             <div class="d-flex justify-content-center">
@@ -64,14 +67,23 @@
             <p style="margin-bottom:2%"></p>
         </div>
 
+        <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+
         <!-- Bootstrap core JavaScript -->
         <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript" src="js/gallery.js"></script>
+        <script src="js/jquery-migrate-3.0.1.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/jquery.animateNumber.min.js"></script>
+        <script src="js/scrollax.min.js"></script>
+        <script src="js/gallery.js"></script>
+        <script src="js/gallery.js"></script>
         <script src="js/classie.js"></script>
         <script src="js/clipboard.min.js"></script>
         <script src="js/menu.js"></script>
+        <script src="js/animate.js"></script>
+
 
     </body>
-
 </html>
