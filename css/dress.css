@@ -1,0 +1,39 @@
+#splash img{
+    height: 600px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+}
+
+#gameContainer {
+    width: 800px;
+    height: 600px;
+    position:absolute;
+}
+
+/*Thanks to https://www.freecodecamp.org/news/a-quick-guide-to-styling-buttons-using-css-f64d4f96337f/*/
+.dressBtn {
+    left: 725px;
+    top: 25px;
+    z-index: 1000;
+    position: absolute;
+    font-size: large;
+    background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);  background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);  background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);  background-image: -o-linear-gradient(top, #eb94d0, #2079b0);  background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+    -webkit-border-radius: 24;  -moz-border-radius: 24;  border-radius: 24px;
+    font-family: Arial;  color: #fafafa;  font-size: 24px;  padding: 5px;  text-decoration: none;
+}
+
+.draggable{
+    touch-action: none;
+    user-select: none;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    position: absolute;
+}
+
+.draggable img{
+    position: absolute;
+}
+
+
