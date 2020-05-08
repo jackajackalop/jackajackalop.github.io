@@ -15,10 +15,12 @@ document.getElementById("startBtn").addEventListener("click",
             bg.style.zIndex = "0";
             btn.innerHTML = "Done!"
             stage = 1;
-        } else {
+        } else if(stage===1){
             bg.src = "../DressDownGame/img/bathroom.png";
             fg.style.display = "block";
-            btn.style.display = "none";
+            btn.innerHTML = "Play Again"
+            btn.style.left = "670px"
+            stage = 2;
             Array.from(document.querySelectorAll(".draggable")).forEach(
                 img => {
                     var transform = matrixToArray(img.style.transform);
@@ -27,6 +29,9 @@ document.getElementById("startBtn").addEventListener("click",
                     }
                   }
                 );
+        } else {
+            stage = 0;
+            location.reload();
         }
     });
 
