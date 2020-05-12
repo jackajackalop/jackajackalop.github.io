@@ -14,6 +14,10 @@ body {
     margin-left: auto;
 }
 
+.dummy {
+    margin-top:100%;
+}
+
 .thumbnail {
     position: relative;
     width: 370px;
@@ -33,17 +37,36 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.thumbnail img.portrait {
+.col {
+    overflow:hidden;
+    margin: 5px;
+}
+
+.limg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+.portrait {
+    position: absolute;
+    left: 50%;
+    top: 50%;
     width: 100%;
     height: auto;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
 }
 
-.col.thumbnail:hover .img{
-  opacity: 0.4;
-  transition: .5s ease;
-}
-
-.col.thumbnail:hover .portrait{
+.col:hover img{
   opacity: 0.4;
   transition: .5s ease;
 }
@@ -67,19 +90,19 @@ body {
 }
 */
 
-.gallery .pics {
+.container .pics {
     -webkit-transition: all 350ms ease;
 transition: all 350ms ease;
 }
 
-.gallery .animation {
+.container .animation {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
 }
 
 @media (max-width: 450px) {
-    .gallery {
+    .container {
         -webkit-column-count: 1;
         -moz-column-count: 1;
         column-count: 1;
