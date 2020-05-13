@@ -46,13 +46,24 @@ button:focus {
     margin-top: 0; /* remove the gap so it doesnt close*/
 }
 
+.title {
+    position: absolute;
+    top: 2%;
+    left: 7%;
+    font-size: 2.5em;
+}
+
 .menu {
 	line-height: 1;
     position: absolute;
-    right: 0;
+    right: 5%;
     top: 0;
     margin: 0.25em;
-    z-index:100;
+}
+
+a:hover {
+    text-decoration:none;
+	color: #72b185;
 }
 
 .menu__list {
