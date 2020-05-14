@@ -35,14 +35,6 @@ document.getElementById("startBtn").addEventListener("click",
         }
     });
 
-window.onload = function() {
-    Array.from(document.querySelectorAll(".draggable img")).forEach(
-        img => {
-            img.style.width = img.width * .4 + "px";
-          }
-    )
-}
-
 // target elements with the "draggable" class
 interact('.draggable')
     .draggable({
