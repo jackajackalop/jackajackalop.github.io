@@ -26,30 +26,38 @@
     <body>
         <!-- Navigation -->
         <div class="container">
-            <div class="title"><a href="index.html">Yixin He</a></div>
-            <nav class="menu menu--juno">
-                <ul class="menu__list">
-                    <li class="menu__item"><a href="index.html" class="menu__link" style="color:black">Art</a></li>
-                    <li class="menu__item menu__item--current"><a href="#" class="menu__link" style="color:black">Code</a></li>
-                    <li class="menu__item"><a href="about.html" class="menu__link" style="color:black">About</a></li>
-                </ul>
-            </nav>
-        </div>
+            <div class="row">
+                <div class="col-sm-auto col-12" style="margin:0; overflow:visible;">
+                    <div class="title"><a href="#">Yixin He</a></div>
+                </div>
+                <div class="col" style="margin:0;">
+                    <div class="float-right">
+                        <nav class="menu menu--juno">
+                            <ul class="menu__list">
+                                <li class="menu__item"><a href="index.html" class="menu__link" style="color:black">Art</a></li>
+                                <li class="menu__item menu__item--current"><a href="#" class="menu__link" style="color:black">Code</a></li>
+                                <li class="menu__item"><a href="about.html" class="menu__link" style="color:black">About</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
 
-        <div class="row" style="margin-top:65px">
-            <div class="col-md-12 text-right mb-3">
-                <button type="button" class="btn btn-outline-black" onclick="window.location.href='code.html'">All</button>
-                <button type="button" class="btn btn-outline-black" onclick="window.location.href='victo.html'">Victo</button>
-                <button type="button" autofocus class="btn btn-outline-black" onclick="window.location.href='#'">Watercolor</button>
-                <button type="button" class="btn btn-outline-black" onclick="window.location.href='mimicry.html'">Mimicry</button>
-                <button type="button" class="btn btn-outline-black" onclick="window.location.href='dress.html'">Dress</button>
-                <button type="button" class="btn btn-outline-black" onclick="window.location.href='parrot.html'">Parrot</button>
+            <div class="row" style="margin-top:0">
+                <div class="col-md-12 text-right mb-3">
+                    <button type="button" class="btn btn-outline-black" onclick="window.location.href='code.html'">All</button>
+                    <button type="button" class="btn btn-outline-black" onclick="window.location.href='victo.html'">Victo</button>
+                    <button type="button" autofocus class="btn btn-outline-black" onclick="window.location.href='#'">Watercolor</button>
+                    <button type="button" class="btn btn-outline-black" onclick="window.location.href='mimicry.html'">Mimicry</button>
+                    <button type="button" class="btn btn-outline-black" onclick="window.location.href='dress.html'">Dress</button>
+                    <button type="button" class="btn btn-outline-black" onclick="window.location.href='parrot.html'">Parrot</button>
+                </div>
             </div>
         </div>
 
 
         <!-- Page Content -->
-            <img src="img/code/watercolor_poster.jpg" style="padding-left:5%; padding-right:5%;" class="img-fluid">
+        <img src="img/code/watercolor_poster.jpg" style="padding-left:5%; padding-right:5%;" class="img-fluid">
         <div class="gallery" style="width:80%;">
             <p style="margin-bottom:2%"></p>
             <p>This was a semester long independent research project I completed under the guidance of <a href="http://www.cs.cmu.edu/~jmccann/">Jim McCann</a> in which on a quest to learn more about C++, OpenGL, and shader writing I implemented <a href="https://artineering.io/publications/Art-Directed-Watercolor-Stylization-of-3D-Animations-in-Real-Time/">this paper</a>. </p>
