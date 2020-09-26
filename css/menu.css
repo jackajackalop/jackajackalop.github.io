@@ -236,6 +236,17 @@ a:hover {
   -webkit-transition: color 150ms ease-in-out;
   transition: color 150ms ease-in-out;
 }
+.icon-link.fill.instagram {
+/*  background-color: #00aced; */
+}
+.icon-link.fill.instagram:hover {
+  background-color: #fff;
+}
+.icon-link.fill.instagram:hover .fa-instagram {
+  color: #fb3958;
+  -webkit-transition: color 150ms ease-in-out;
+  transition: color 150ms ease-in-out;
+}
 .icon-link.fill.reddit {
   background-color: #8bbbe3;
 }
@@ -308,6 +319,9 @@ a:hover {
 }
 .icon-link:hover.twitter {
   border: 2px solid #00aced;
+}
+.icon-link:hover.instagram {
+  border: 2px solid #fb3958;
 }
 .icon-link:hover.reddit {
   border: 2px solid #8bbbe3;
